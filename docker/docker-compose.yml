@@ -1,0 +1,9 @@
+version: "3.0"
+services:
+    web:
+        container_name: test
+        build: 
+            context: .
+            dockerfile: dockerfile
+        volumes:
+            - ./../:/var/www/html
